@@ -13,6 +13,8 @@ const forYou = [
 ];
 
 const WorkshopDetails = () => {
+  const whatsappLink = "https://wa.me/919929720831?text=Hi!%20I%20want%20to%20reserve%20my%20seat.";
+
   return (
     <section className="py-20 bg-background">
       <div className="container">
@@ -34,7 +36,6 @@ const WorkshopDetails = () => {
           ⚠️ Only 100 Seats Available Per Batch
         </p>
 
-        {/* For You */}
         <div className="max-w-xl mx-auto bg-rose-light/30 rounded-2xl p-8 border border-primary/10">
           <h3 className="text-xl font-heading font-bold text-foreground text-center mb-6">
             This Workshop Is For You If You Want To:
@@ -48,7 +49,7 @@ const WorkshopDetails = () => {
             ))}
           </div>
           <div className="text-center">
-            <a href="#book" className="inline-block gradient-rose text-primary-foreground px-8 py-3 rounded-full font-bold shadow-glow hover:opacity-90 transition-all">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block gradient-rose text-primary-foreground px-8 py-3 rounded-full font-bold shadow-glow hover:opacity-90 transition-all">
               👉 Reserve My Seat Now
             </a>
           </div>

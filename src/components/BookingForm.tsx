@@ -14,7 +14,6 @@ const BookingForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Build WhatsApp message
     const msg = `Hi! I want to book a seat.\nName: ${formData.name}\nMobile: ${formData.mobile}\nCity: ${formData.city}\nCourse: ${formData.course}`;
     window.open(`https://wa.me/919929720831?text=${encodeURIComponent(msg)}`, "_blank");
     setSubmitted(true);
@@ -39,45 +38,16 @@ const BookingForm = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="bg-card rounded-2xl p-8 border border-border space-y-4">
-              <input
-                type="text"
-                placeholder="Full Name"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-              />
-              <input
-                type="tel"
-                placeholder="Mobile Number"
-                required
-                value={formData.mobile}
-                onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-              />
-              <input
-                type="text"
-                placeholder="City"
-                required
-                value={formData.city}
-                onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-              />
-              <select
-                required
-                value={formData.course}
-                onChange={(e) => setFormData({ ...formData, course: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-              >
+              <input type="text" placeholder="Full Name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring" />
+              <input type="tel" placeholder="Mobile Number" required value={formData.mobile} onChange={(e) => setFormData({ ...formData, mobile: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring" />
+              <input type="text" placeholder="City" required value={formData.city} onChange={(e) => setFormData({ ...formData, city: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring" />
+              <select required value={formData.course} onChange={(e) => setFormData({ ...formData, course: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring">
                 <option value="">Select a course</option>
                 {courseOptions.map((c) => (
                   <option key={c} value={c}>{c}</option>
                 ))}
               </select>
-              <button
-                type="submit"
-                className="w-full gradient-rose text-primary-foreground py-4 rounded-full font-bold text-lg shadow-glow hover:opacity-90 transition-all"
-              >
+              <button type="submit" className="w-full gradient-rose text-primary-foreground py-4 rounded-full font-bold text-lg shadow-glow hover:opacity-90 transition-all">
                 🚀 Reserve My Seat
               </button>
             </form>
@@ -85,12 +55,7 @@ const BookingForm = () => {
 
           <div className="text-center mt-6">
             <p className="text-muted-foreground text-sm mb-2">Need more details?</p>
-            <a
-              href="https://wa.me/919929720831"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-card border border-border px-6 py-3 rounded-full text-sm font-semibold text-foreground hover:border-primary/30 transition-colors"
-            >
+            <a href="https://wa.me/919929720831" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-card border border-border px-6 py-3 rounded-full text-sm font-semibold text-foreground hover:border-primary/30 transition-colors">
               📲 Chat on WhatsApp
             </a>
           </div>
