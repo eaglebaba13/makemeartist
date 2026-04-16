@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BookingForm from "@/components/BookingForm";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import MallOfSalonPopup from "@/components/MallOfSalonPopup";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <BookingForm />
       <Footer />
       <WhatsAppFloat />
+      <MallOfSalonPopup />
     </div>
   );
 };
