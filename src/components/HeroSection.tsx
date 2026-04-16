@@ -1,9 +1,10 @@
 import heroImg from "@/assets/hero-beauty.jpg";
 
 const HeroSection = () => {
+  const whatsappLink = "https://wa.me/919929720831?text=Hi!%20I%20want%20to%20book%20a%20seat.";
+
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img src={heroImg} alt="Beauty artist at work" className="w-full h-full object-cover" width={1280} height={720} />
         <div className="absolute inset-0 gradient-hero" />
@@ -11,7 +12,6 @@ const HeroSection = () => {
 
       <div className="container relative z-10 py-20">
         <div className="max-w-2xl">
-          {/* Offer badge */}
           <div className="inline-flex items-center gap-2 gradient-gold text-foreground px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-pulse-glow">
             🎁 Flat 50% Launch Offer
           </div>
@@ -24,7 +24,6 @@ const HeroSection = () => {
             Learn from India's Leading Beauty Gurus. Start your beauty career today and earn tomorrow.
           </p>
 
-          {/* Checkmarks */}
           <div className="grid grid-cols-2 gap-3 mb-8">
             {["Live 3 Hour Workshop", "Industry Expert Trainers", "Beginner Friendly", "Certificate from Make Me Artist"].map((item) => (
               <div key={item} className="flex items-center gap-2 text-primary-foreground/90 text-sm">
@@ -33,9 +32,8 @@ const HeroSection = () => {
             ))}
           </div>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <a href="#book" className="gradient-rose text-primary-foreground px-8 py-4 rounded-full text-lg font-bold shadow-glow hover:opacity-90 transition-all text-center">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="gradient-rose text-primary-foreground px-8 py-4 rounded-full text-lg font-bold shadow-glow hover:opacity-90 transition-all text-center">
               👉 Book My Seat Now
             </a>
             <a
@@ -48,7 +46,6 @@ const HeroSection = () => {
             </a>
           </div>
 
-          {/* Price */}
           <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary-foreground/10">
             <p className="text-primary-foreground text-sm">🔥 Today's Offer</p>
             <p className="text-primary-foreground font-heading text-2xl font-bold">
