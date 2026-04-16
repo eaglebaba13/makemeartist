@@ -10,16 +10,16 @@ import trainer9 from "@/assets/trainer-9.jpg";
 import trainer10 from "@/assets/trainer-10.jpg";
 
 const trainers = [
-  { name: "Kamna Joshi", expertise: "Bridal & HD Makeup", city: "Indore", img: trainer1 },
-  { name: "Rahul Verma", expertise: "Hair Styling & Coloring", city: "Mumbai", img: trainer2 },
-  { name: "Dr. Meera Sharma", expertise: "Skincare & Cosmetology", city: "Delhi", img: trainer3 },
-  { name: "Nisha Patel", expertise: "Nail Art & Extensions", city: "Ahmedabad", img: trainer4 },
-  { name: "Arjun Kapoor", expertise: "Cosmetology & Aesthetics", city: "Jaipur", img: trainer5 },
-  { name: "Pooja Rajput", expertise: "Bridal & Fashion Makeup", city: "Lucknow", img: trainer6 },
-  { name: "Simran Kaur", expertise: "Editorial & Runway Makeup", city: "Chandigarh", img: trainer7 },
-  { name: "Vikram Singh", expertise: "Celebrity Hair Styling", city: "Mumbai", img: trainer8 },
-  { name: "Kavita Mehra", expertise: "Salon Management & Beauty", city: "Raipur", img: trainer9 },
-  { name: "Ananya Das", expertise: "Advanced Makeup Artistry", city: "Kolkata", img: trainer10 },
+  { name: "Master Pankaj", expertise: "Hair Guru", city: "Gujarat", img: trainer1 },
+  { name: "Gurpreet Kaur", expertise: "Nail Artist", city: "International", img: trainer2 },
+  { name: "Jassi Chhabra", expertise: "Founder Shades Academy", city: "Rajasthan", img: trainer3 },
+  { name: "Deepti Gondaliya", expertise: "Make-Up Artist", city: "Gujarat", img: trainer4 },
+  { name: "Loukik Shah", expertise: "Hair Magician", city: "LS Academy", img: trainer5 },
+  { name: "Kamna Joshi", expertise: "Make-Up Artist", city: "Selfie Academy", img: trainer6 },
+  { name: "Kalpana Jaalani", expertise: "PMU Artist", city: "Lucknow", img: trainer7 },
+  { name: "Yogesh Srivastava", expertise: "Nail Art Setup", city: "Aveda Education", img: trainer8 },
+  { name: "Gauransh", expertise: "BWAI Beauty Association", city: "Surat", img: trainer9 },
+  { name: "Vikas Joshi", expertise: "Salon Growth Management", city: "Rajasthan", img: trainer10 },
 ];
 
 const TrainersSection = () => {
