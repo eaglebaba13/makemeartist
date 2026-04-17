@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-beauty.jpg";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 
 const HeroSection = () => {
   const whatsappLink = "https://wa.me/919929720831?text=Hi!%20I%20want%20to%20book%20a%20seat.";
