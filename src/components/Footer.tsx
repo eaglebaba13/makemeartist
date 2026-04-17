@@ -71,7 +71,15 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 pt-6 text-center text-primary-foreground/40 text-xs">
-          © 2026 Make Me Artist. Built with love using caffeine.ai
+          © 2026 Make Me Artist. Designed by{" "}
+          <a
+            href="https://wa.me/919911619699"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary-foreground transition-colors underline"
+          >
+            LWILL
+          </a>
         </div>
       </div>
     </footer>
