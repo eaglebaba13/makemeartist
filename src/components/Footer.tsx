@@ -1,5 +1,6 @@
 import logo from "@/assets/makemeartist-logo.png";
 import mallOfSalonLogo from "@/assets/mallofsalon-logo.png";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 
 const academies = [
   { name: "Kamna Joshi International School of Beauty", city: "Indore" },
