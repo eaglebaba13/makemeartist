@@ -32,7 +32,7 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 mb-4">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="gradient-rose text-primary-foreground px-8 py-4 rounded-full text-lg font-bold shadow-glow hover:opacity-90 transition-all text-center">
               👉 Book My Seat Now
             </a>
@@ -45,6 +45,22 @@ const HeroSection = () => {
               👉 Join on WhatsApp
             </a>
           </div>
+
+          {/* Google Play Store Button */}
+          <a
+            href="https://play.google.com/store/apps/details?id=com.maartist.learning"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-black/80 hover:bg-black border border-white/20 text-white px-5 py-3 rounded-xl transition-all mb-8"
+          >
+            <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186c-.18.18-.425.29-.703.29-.55 0-.996-.445-.996-.996V2.52c0-.55.446-.996.996-.996.278 0 .523.11.702.29zM13.792 12l8.574 8.574c.393.393.393 1.03 0 1.423l-.025.025c-.393.393-1.03.393-1.423 0L14.2 13.15 13.792 12zM14.2 10.85l7.718-8.872c.393-.393 1.03-.393 1.423 0l.025.025c.393.393.393 1.03 0 1.423L13.792 12l.408-1.15zM4.5 2.52v18.96l9.282-9.48L4.5 2.52z"/>
+            </svg>
+            <div className="text-left">
+              <p className="text-[10px] leading-none opacity-80">GET IT ON</p>
+              <p className="text-base font-semibold leading-tight">Google Play</p>
+            </div>
+          </a>
 
           <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary-foreground/10">
             <p className="text-primary-foreground text-sm">🔥 Today's Offer</p>
