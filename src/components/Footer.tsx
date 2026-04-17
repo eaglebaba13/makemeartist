@@ -1,5 +1,6 @@
 import logo from "@/assets/makemeartist-logo.png";
 import mallOfSalonLogo from "@/assets/mallofsalon-logo.png";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 
 const academies = [
   { name: "Kamna Joshi International School of Beauty", city: "Indore" },
@@ -66,15 +67,10 @@ const Footer = () => {
               href="https://play.google.com/store/apps/details?id=com.maartist.learning"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-4 py-3 rounded-xl transition-all"
+              className="inline-block hover:opacity-90 transition-opacity"
+              aria-label="Get it on Google Play"
             >
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.609 1.814L13.792 12 3.61 22.186c-.18.18-.425.29-.703.29-.55 0-.996-.445-.996-.996V2.52c0-.55.446-.996.996-.996.278 0 .523.11.702.29zM13.792 12l8.574 8.574c.393.393.393 1.03 0 1.423l-.025.025c-.393.393-1.03.393-1.423 0L14.2 13.15 13.792 12zM14.2 10.85l7.718-8.872c.393-.393 1.03-.393 1.423 0l.025.025c.393.393.393 1.03 0 1.423L13.792 12l.408-1.15zM4.5 2.52v18.96l9.282-9.48L4.5 2.52z"/>
-              </svg>
-              <div className="text-left">
-                <p className="text-[9px] leading-none opacity-80">GET IT ON</p>
-                <p className="text-sm font-semibold leading-tight">Google Play</p>
-              </div>
+              <img src={googlePlayBadge} alt="Get it on Google Play" className="h-12 w-auto" width={160} height={48} />
             </a>
           </div>
 
