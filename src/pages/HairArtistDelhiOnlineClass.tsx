@@ -177,7 +177,7 @@ const HairArtistDelhiOnlineClass = () => {
                 className="w-full rounded-3xl object-cover aspect-[4/3] shadow-glow"
                 width={1200}
                 height={900}
-                fetchpriority="high"
+                {...{ fetchpriority: "high" }}
               />
             </div>
           </div>
