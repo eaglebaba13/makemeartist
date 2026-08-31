@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/makemeartist-logo.png";
 import mallOfSalonLogo from "@/assets/mallofsalon-logo.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
+import { NAV_LINKS } from "@/data/site";
+
 
 const academies = [
   { name: "Kamna Joshi International School of Beauty", city: "Indore" },
