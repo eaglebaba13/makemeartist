@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/makemeartist-logo.png";
 import mallOfSalonLogo from "@/assets/mallofsalon-logo.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
+import { NAV_LINKS } from "@/data/site";
+
 
 const academies = [
   { name: "Kamna Joshi International School of Beauty", city: "Indore" },
@@ -31,8 +34,23 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Explore */}
+          <div>
+            <h4 className="font-semibold mb-3 text-sm">Explore</h4>
+            <ul className="space-y-2">
+              {NAV_LINKS.map((l) => (
+                <li key={l.to}>
+                  <Link to={l.to} className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Contact */}
           <div>
+
             <h4 className="font-semibold mb-3 text-sm">Contact Us</h4>
             <div className="space-y-2 text-primary-foreground/60 text-sm">
               <a href="https://wa.me/919929720831" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
